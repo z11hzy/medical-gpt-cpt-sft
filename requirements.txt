@@ -1,0 +1,7 @@
+# Core reproducible environment. PyTorch must match the host CUDA image and is installed separately.
+-r requirements-autodl.txt
+
+# Optional 4-bit fallback:
+# python -m pip install -r requirements-qlora.txt
+
+# RL dependencies are intentionally omitted until an audited RL stage is implemented.

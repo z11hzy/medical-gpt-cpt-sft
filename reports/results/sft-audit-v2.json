@@ -1,0 +1,285 @@
+{
+  "source": {
+    "revision": "6e219f1a14856833ee436063d3b73c5f1ab9cfb9",
+    "train_sha256": "98f111016800f98ef4e5c5e29f9260c8ce8ef4331897523d6c3a61003957fed3",
+    "valid_sha256": "397ce9692f0f5782227781ffc2cd9cbb18c105e03817000aedc97195584e6992",
+    "test_sha256": "c3876d82565cb9958be72883a096311a5081fb6704f8607ec043921baf57b1a9"
+  },
+  "selection": {
+    "method": "lowest SHA-256(seed + canonical JSON) after objective exclusions",
+    "seed": 42,
+    "requested": 20000,
+    "selected": 20000
+  },
+  "counts": {
+    "records": 1949972,
+    "quality_answer_under_10_chars": 448076,
+    "cpt_pair_overlap": 19981,
+    "excluded_union": 63495,
+    "quality_absolute_claim": 30483,
+    "quality_folk_remedy": 7389,
+    "duplicate_prompt_excess": 58898,
+    "exact_normalized_duplicate": 43112,
+    "quality_answer_over_4000_chars": 1179,
+    "url_or_contact": 425,
+    "quality_url": 207,
+    "quality_phone_like": 61,
+    "quality_contact_or_promotion": 170,
+    "manual_review_exclusion": 18,
+    "heldout_prompt_overlap": 71,
+    "replacement_character": 3,
+    "quality_replacement_character": 3
+  },
+  "exclusion_first_source_lines": {
+    "cpt_pair_overlap": [
+      62,
+      77,
+      94,
+      311,
+      320,
+      406,
+      632,
+      761,
+      996,
+      1054,
+      1092,
+      1149,
+      1212,
+      1216,
+      1222,
+      1331,
+      1415,
+      1485,
+      1554,
+      1673
+    ],
+    "exact_normalized_duplicate": [
+      3886,
+      13520,
+      13640,
+      20525,
+      21665,
+      22607,
+      25245,
+      27666,
+      27909,
+      29449,
+      31379,
+      32740,
+      33002,
+      33462,
+      35613,
+      36162,
+      37302,
+      37381,
+      38626,
+      39200
+    ],
+    "url_or_contact": [
+      5419,
+      9644,
+      9678,
+      14799,
+      15077,
+      22704,
+      23798,
+      25554,
+      27543,
+      30787,
+      33325,
+      35699,
+      35863,
+      42407,
+      47552,
+      50643,
+      52823,
+      61509,
+      61914,
+      61920
+    ],
+    "manual_review_exclusion": [
+      41500,
+      115026,
+      256529,
+      315814,
+      444567,
+      552412,
+      609482,
+      633626,
+      641506,
+      659609,
+      911922,
+      1182746,
+      1317386,
+      1330049,
+      1331179,
+      1357445,
+      1520132,
+      1577127
+    ],
+    "heldout_prompt_overlap": [
+      111901,
+      127393,
+      207213,
+      247714,
+      258394,
+      305343,
+      346786,
+      365955,
+      448700,
+      454822,
+      513838,
+      525164,
+      542815,
+      561391,
+      562006,
+      569228,
+      572171,
+      582199,
+      616656,
+      627132
+    ],
+    "replacement_character": [
+      158041,
+      1049912,
+      1238048
+    ]
+  },
+  "automatic_exclusions": [
+    "invalid",
+    "exact_normalized_duplicate",
+    "heldout_prompt_overlap",
+    "cpt_pair_overlap",
+    "ceval_prompt_overlap",
+    "replacement_character",
+    "url_or_contact",
+    "manual_review_exclusion"
+  ],
+  "manual_exclusions": {
+    "256529": "与官方 SFT test 第 167 条近重复",
+    "641506": "与官方 SFT valid 第 226 条近重复",
+    "552412": "回答把儿童脱发错配为痤疮且语言明显损坏",
+    "659609": "与另一条儿童脱发问答近重复且回答错配",
+    "609482": "机构价格营销内容",
+    "115026": "引导拨打专家咨询热线",
+    "1317386": "引导拨打专家咨询热线",
+    "633626": "医院外链营销内容",
+    "1331179": "产品官网内容",
+    "1330049": "医院外链内容",
+    "1182746": "推荐自行剪除鸡眼及刺激性偏方",
+    "1577127": "未经依据承诺中医可根治鲜红斑痣",
+    "911922": "血毒排毒叙述并承诺根治荨麻疹",
+    "444567": "推荐大量抗癌秘方并声称无副作用",
+    "1357445": "推荐肝硬化腹水秘方并声称效果非常好",
+    "41500": "推荐偏方辅助治疗且含未经核实因果断言",
+    "315814": "包含高风险肿瘤偏方、罂粟壳和百分百有效率",
+    "1520132": "建议偏方作为子宫肌瘤辅助治疗"
+  },
+  "quality_flags_are_not_automatic_exclusions": [
+    "replacement_character",
+    "absolute_claim",
+    "folk_remedy",
+    "contact_or_promotion",
+    "phone_like",
+    "url",
+    "answer_under_10_chars",
+    "answer_over_4000_chars"
+  ],
+  "token_stats": {
+    "train": {
+      "samples": 20000,
+      "max_length": 512,
+      "input_token_sum_after_truncation": 3091741,
+      "assistant_label_token_sum": 2224939,
+      "truncated_samples": 778,
+      "truncated_percent": 3.8899999999999997,
+      "input_length_percentiles": {
+        "min": 27.0,
+        "p50": 119.0,
+        "p90": 437.0,
+        "p95": 496.0,
+        "p99": 511.0,
+        "max": 512.0
+      },
+      "assistant_length_percentiles": {
+        "min": 2.0,
+        "p50": 71.0,
+        "p90": 408.0,
+        "p95": 467.0,
+        "p99": 490.0,
+        "max": 509.0
+      }
+    },
+    "valid": {
+      "samples": 500,
+      "max_length": 512,
+      "input_token_sum_after_truncation": 73403,
+      "assistant_label_token_sum": 51372,
+      "truncated_samples": 15,
+      "truncated_percent": 3.0,
+      "input_length_percentiles": {
+        "min": 29.0,
+        "p50": 100.5,
+        "p90": 411.70000000000016,
+        "p95": 477.0999999999999,
+        "p99": 511.0,
+        "max": 512.0
+      },
+      "assistant_length_percentiles": {
+        "min": 2.0,
+        "p50": 65.0,
+        "p90": 387.60000000000014,
+        "p95": 448.14999999999986,
+        "p99": 491.01,
+        "max": 499.0
+      }
+    },
+    "test": {
+      "samples": 500,
+      "max_length": 512,
+      "input_token_sum_after_truncation": 70185,
+      "assistant_label_token_sum": 48562,
+      "truncated_samples": 17,
+      "truncated_percent": 3.4000000000000004,
+      "input_length_percentiles": {
+        "min": 29.0,
+        "p50": 102.0,
+        "p90": 397.0,
+        "p95": 454.1999999999998,
+        "p99": 511.0,
+        "max": 512.0
+      },
+      "assistant_length_percentiles": {
+        "min": 2.0,
+        "p50": 58.0,
+        "p90": 370.0,
+        "p95": 422.2999999999997,
+        "p99": 487.0,
+        "max": 498.0
+      }
+    }
+  },
+  "training_plan_estimate": {
+    "effective_batch": 4,
+    "steps_per_epoch": 5000,
+    "warmup_steps_at_5_percent": 250
+  },
+  "near_duplicates": {
+    "method": "char 3/4-gram hashed TF-IDF; cosine>=0.97; candidate screening only",
+    "train_candidate_pairs": 0,
+    "train_pair_examples": [],
+    "heldout_train_candidates": []
+  },
+  "outputs": {
+    "train_sha256": "570d472f14855042a9bc791a1ff453ece95a77f095085070d16a66e1af11947d",
+    "valid_sha256": "5238c6ddcbfc6be56ad5105997ab2f5983690a6b24069fcfcb027b8ad4137fad",
+    "test_sha256": "4be5e4862696a43f1d3e8f09147891fbcf018855385ac7808933e8e745c0f30d"
+  },
+  "elapsed_seconds": 167.7547603999992,
+  "limitations": [
+    "关键词命中不等于医学错误",
+    "未逐条完成临床事实认证",
+    "近重复为有限召回候选，尚需人工复核",
+    "保留原文内容，仅转换为 ShareGPT 对话格式"
+  ]
+}

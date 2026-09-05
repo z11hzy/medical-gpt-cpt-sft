@@ -1,0 +1,32 @@
+==============================================================================
+ Qwen2.5-0.5B | BASE vs CPT | 20K-source / cleaned / LoRA
+==============================================================================
+ Train: 19,901 docs | 28,946 blocks | 7,410,176 input tokens
+ Eval : 500 docs | 717 blocks | 183,552 input tokens
+ Setup: 1 epoch | block=256 | batch=2 x accum=4 | warmup=181 steps
+ Status: complete | phase=cpt | step=3619/3619
+ Progress: 100.0%
+ Latest logged LR: 0.00000116 | train_loss=2.863939
+------------------------------------------------------------------------------
+ Metric              Baseline     CPT final         Delta     Reduction
+------------------------------------------------------------------------------
+ eval_loss           3.032032      2.877681     -0.154351         5.09%
+ PPL                20.739337     17.773006     -2.966332        14.30%
+------------------------------------------------------------------------------
+ Evaluation history (same full validation set)
+      Step       Epoch       eval_loss             PPL
+       500       0.138        2.932894       18.781907
+      1000       0.276        2.916114       18.469369
+      1500       0.415        2.905173       18.268396
+      2000       0.553        2.895572       18.093852
+      2500       0.691        2.887697       17.951914
+      3000       0.829        2.880862       17.829636
+      3500       0.967        2.877774       17.774671
+      3619       1.000        2.877681       17.773006
+ Train runtime (incl. periodic eval): 53.46 min
+------------------------------------------------------------------------------
+ Lower eval_loss / PPL is better. Delta = CPT - Base.
+ Positive reduction = improvement; negative = regression.
+ PPL = exp(eval_loss); these are NOT two independent quality tests.
+ Validation metrics do NOT establish medical correctness or safety.
+==============================================================================

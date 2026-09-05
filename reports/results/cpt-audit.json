@@ -1,0 +1,265 @@
+{
+  "parameters": {
+    "ignored_arguments": [
+      "--warmup_ratio",
+      "0.05",
+      "--overwrite_output_dir"
+    ],
+    "warmup_steps": 0,
+    "effective_warmup_for_500_steps": 0,
+    "effective_batch": 8,
+    "optimizer": "OptimizerNames.ADAMW_TORCH_FUSED",
+    "bf16": true,
+    "gradient_checkpointing": false,
+    "max_train_samples": 4000,
+    "max_eval_samples": 500,
+    "proposed_fractional_warmup_check": 25
+  },
+  "data": {
+    "train": {
+      "documents": 20000,
+      "json_errors": [],
+      "raw_exact_duplicate_excess": 84,
+      "normalized_duplicate_excess": 84,
+      "duplicate_groups": 76,
+      "token_count_without_eos": 7431446,
+      "packed_blocks": 29097,
+      "packed_input_tokens": 7448832,
+      "dropped_tail_tokens": 2614,
+      "documents_touched_by_current_cap": 2721,
+      "token_length_percentiles": {
+        "min": 8.0,
+        "p50": 417.0,
+        "p90": 525.0,
+        "p95": 573.0,
+        "p99": 1229.0599999999904,
+        "max": 8233.0
+      },
+      "replacement_character_documents": 1,
+      "short_under_20_chars": 95,
+      "sha256": "e581b66eefb8fd8c98b6343eeba6b9395fd3f3ce709b4ffe54dbe72565c52304"
+    },
+    "valid": {
+      "documents": 500,
+      "json_errors": [],
+      "raw_exact_duplicate_excess": 0,
+      "normalized_duplicate_excess": 0,
+      "duplicate_groups": 0,
+      "token_count_without_eos": 183289,
+      "packed_blocks": 717,
+      "packed_input_tokens": 183552,
+      "dropped_tail_tokens": 237,
+      "documents_touched_by_current_cap": 336,
+      "token_length_percentiles": {
+        "min": 12.0,
+        "p50": 414.0,
+        "p90": 508.1,
+        "p95": 555.05,
+        "p99": 968.0299999999991,
+        "max": 6210.0
+      },
+      "replacement_character_documents": 0,
+      "short_under_20_chars": 3,
+      "sha256": "7d1d963c0f3999175e8724652cffd5c58c2025f9ad50384e40de3764de272172"
+    }
+  },
+  "tokenizer": {
+    "class": "Qwen2Tokenizer",
+    "is_fast": true,
+    "eos": 151643
+  },
+  "overlap": {
+    "valid_exact_normalized_matches": [],
+    "ceval_question_substring_matches": [
+      {
+        "subject": "physician",
+        "id": 34,
+        "question_chars": 4,
+        "train_lines": [
+          2276
+        ]
+      }
+    ]
+  },
+  "review_candidates": {
+    "absolute_claim": {
+      "count": 544,
+      "first_lines": [
+        38,
+        107,
+        149,
+        183,
+        191,
+        223,
+        244,
+        278,
+        338,
+        371,
+        410,
+        452,
+        531,
+        588,
+        594
+      ]
+    },
+    "folk_remedy": {
+      "count": 65,
+      "first_lines": [
+        125,
+        880,
+        1073,
+        1194,
+        1549,
+        1751,
+        1788,
+        1851,
+        1876,
+        2985,
+        3073,
+        3619,
+        3754,
+        3840,
+        4701
+      ]
+    },
+    "contact_or_promotion": {
+      "count": 0,
+      "first_lines": []
+    },
+    "phone_like": {
+      "count": 0,
+      "first_lines": []
+    },
+    "url": {
+      "count": 7,
+      "first_lines": [
+        3664,
+        3700,
+        10106,
+        13545,
+        14725,
+        15975,
+        19965
+      ]
+    },
+    "hypertension_infertility_cooccurrence": {
+      "count": 14,
+      "first_lines": [
+        139,
+        1241,
+        3593,
+        5000,
+        7596,
+        7938,
+        9020,
+        9247,
+        11472,
+        12959,
+        13894,
+        18382,
+        19377,
+        19488
+      ]
+    }
+  },
+  "near_duplicates": {
+    "method": "char 3/4-gram hashed TF-IDF, 2**20 buckets, cosine>=0.95, top-2 neighbors; candidate screening only",
+    "train_nonexact_candidate_pairs": 19,
+    "train_pair_examples": [
+      [
+        405,
+        19046
+      ],
+      [
+        487,
+        8477
+      ],
+      [
+        806,
+        2882
+      ],
+      [
+        1909,
+        10330
+      ],
+      [
+        2877,
+        13336
+      ],
+      [
+        4242,
+        16188
+      ],
+      [
+        4700,
+        15630
+      ],
+      [
+        4781,
+        6212
+      ],
+      [
+        5245,
+        13884
+      ],
+      [
+        5626,
+        9141
+      ],
+      [
+        6123,
+        14025
+      ],
+      [
+        7349,
+        13551
+      ],
+      [
+        7384,
+        19787
+      ],
+      [
+        8760,
+        19956
+      ],
+      [
+        9397,
+        19061
+      ],
+      [
+        10297,
+        18081
+      ],
+      [
+        10447,
+        13725
+      ],
+      [
+        14856,
+        17996
+      ],
+      [
+        15358,
+        19916
+      ]
+    ],
+    "valid_train_candidates": [
+      {
+        "valid_line": 233,
+        "train_line": 13707,
+        "similarity": 0.9898164868354797
+      },
+      {
+        "valid_line": 399,
+        "train_line": 12313,
+        "similarity": 0.9759642481803894
+      }
+    ]
+  },
+  "full_run_estimate": {
+    "steps_at_effective_batch_8": 3638,
+    "warmup_steps_at_5_percent": 182,
+    "minutes_linear_extrapolation": 52.503160245000004,
+    "note": "Measured v1 scaled by block count; not a guarantee; eval/saving/load/thermals differ."
+  }
+}
