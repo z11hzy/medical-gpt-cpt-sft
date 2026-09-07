@@ -28,7 +28,11 @@ def sha256(path: Path) -> str:
 
 
 def convert(source: Path, output: Path, seen: set[str], counters: dict[str, int]) -> int:
-    rows = json.loads(source.read_text(encoding="utf-8"))
+    text = source.read_text(encoding="utf-8")
+    try:
+        rows = json.loads(text)
+    except json.JSONDecodeError:
+        rows = [json.loads(line) for line in text.splitlines() if line.strip()]
     if not isinstance(rows, list):
         raise ValueError(f"Expected a JSON list in {source}")
     written = 0
