@@ -37,3 +37,12 @@ reports/results/ceval-base.json
 reports/results/ceval-cpt-v1.json
 reports/results/ceval-cpt-v1-merged.json
 reports/results/sft-audit.json
+
+# Local process dumps and one-off evaluation exports; curated formal results live under reports/results/
+/GRPO_7B_REPORT_ZH.md
+/ceval-*.json
+/eval-generation-*.jsonl
+/eval-generation-*.json
+/generation-sft-vs-grpo-test-500.*
+/grpo_summary.json
+/trainer_state.json

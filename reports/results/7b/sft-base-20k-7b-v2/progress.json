@@ -1,0 +1,21 @@
+{
+  "loss": 2.112960205078125,
+  "grad_norm": 0.8024459481239319,
+  "learning_rate": 4.210526315789474e-09,
+  "epoch": 1.0,
+  "eval_loss": 2.0851404666900635,
+  "eval_runtime": 31.7171,
+  "eval_samples_per_second": 15.764,
+  "eval_steps_per_second": 15.764,
+  "train_runtime": 6563.1662,
+  "train_samples_per_second": 3.047,
+  "train_steps_per_second": 0.762,
+  "train_loss": 2.124217794752121,
+  "phase": "base",
+  "status": "complete",
+  "step": 5000,
+  "max_steps": 5000,
+  "elapsed_seconds": 6620.5,
+  "updated_at": "2026-09-06T06:48:27",
+  "response_perplexity": 8.045721558203232
+}

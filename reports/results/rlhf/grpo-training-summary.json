@@ -1,0 +1,18 @@
+{
+  "train_runtime": 3136.4943,
+  "train_samples_per_second": 0.319,
+  "train_steps_per_second": 0.08,
+  "total_flos": 0.0,
+  "train_loss": 5.048030167813522e-05,
+  "runtime_wall_seconds": 3176.751735687256,
+  "peak_gpu_memory_gib": 10.591386318206787,
+  "policy_model": "/root/autodl-tmp/models/Qwen2.5-7B-SFT-merged",
+  "reward_base": "/root/autodl-tmp/models/Qwen2.5-0.5B-SFT-merged",
+  "reward_adapter": "/root/autodl-tmp/medical-gpt-outputs/rm-sft-0.5b-v1",
+  "train_file": "data/processed/ppo-prompts-0.5b-v1/train.jsonl",
+  "train_samples": 250,
+  "num_generations": 4,
+  "max_completion_length": 128,
+  "beta": 0.04,
+  "loss_type": "grpo"
+}

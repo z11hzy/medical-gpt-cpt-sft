@@ -11,7 +11,7 @@
 
 ## 租卡建议
 
-先选择单张 24GB、支持 BF16 的 NVIDIA GPU 和 Python 3.11+ 镜像。BF16 LoRA 是否能在具体镜像中稳定运行要以烟雾测试为准，不能仅凭显存标称值判断。若 OOM，先关闭该实例中的训练进程，再使用 QLoRA 方案重跑两条分支。
+先选择单张 24GB、支持 BF16 的 NVIDIA GPU 和 Python 3.11+ 镜像。若显存不足，使用 QLoRA 配置重跑两条分支，并保持两条分支的精度方案一致。
 
 ## 上传与初始化
 
@@ -32,9 +32,6 @@ bash scripts/check_autodl_env.sh
 ## 运行顺序
 
 ```bash
-# 只用 128 个样本检查加载、反向传播、保存和验证
-bash scripts/run_7b_smoke.sh
-
 # 正式 CPT：先记录 Base 验证指标，再训练 CPT
 bash scripts/run_7b_cpt.sh
 
@@ -46,21 +43,37 @@ bash scripts/run_7b_sft_cpt.sh
 bash scripts/run_7b_eval.sh
 ```
 
+## RLHF 后训练与正式评测
+
+在完成 SFT 并准备偏好数据后，可按下面顺序运行 DPO、奖励模型和 GRPO：
+
+```bash
+# 7B SFT → DPO
+bash scripts/run_7b_dpo.sh
+
+# 0.5B Reward Model（供 PPO/GRPO 使用）
+bash scripts/run_05b_rm.sh
+
+# 7B GRPO 训练和独立评测
+bash scripts/run_formal_eval_grpo.sh
+```
+
+PPO 的可复现实验入口是 `tools/run_true_ppo.py`，使用与报告一致的 0.5B 工程验证配置。RLHF 结果摘要位于 `reports/results/rlhf/`。
+
 每个训练目录都有 `run_config.json`、`progress.json`、`dataset_identity.json` 和 Trainer 指标。正式输出默认位于 `/root/autodl-tmp/medical-gpt-outputs`；代码仓库被删除或实例被关机前，应下载这些目录以及 `reports/results/7b/`。
 
 ## OOM 时切换 QLoRA
 
-只在 BF16 烟雾测试 OOM 后执行：
+如果 BF16 正式训练 OOM，执行：
 
 ```bash
 source scripts/set_env.sh
 "$PYTHON_BIN" -m pip install -r requirements-qlora.txt
 export USE_QLORA=1
 bash scripts/check_autodl_env.sh
-bash scripts/run_7b_smoke.sh
 ```
 
-QLoRA 烟雾测试通过后，在运行每一个正式脚本的同一终端中保留 `USE_QLORA=1`。如果已经产生同名正式输出目录，运行器会拒绝覆盖；先保存失败日志，再明确改名或移动旧目录，不要直接删除实验记录。
+环境检查通过后，在运行每一个正式脚本的同一终端中保留 `USE_QLORA=1`。如果已经产生同名正式输出目录，运行器会拒绝覆盖；先保存失败日志，再明确改名或移动旧目录，不要直接删除实验记录。
 
 ## 数据传输包
 

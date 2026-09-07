@@ -1,0 +1,135 @@
+{
+  "rows": [
+    {
+      "branch": "Base",
+      "validation": {
+        "epoch": 0,
+        "eval_accuracy": 0.48007219624251374,
+        "eval_loss": 2.479550838470459,
+        "eval_model_preparation_time": 0.0273,
+        "eval_runtime": 43.549,
+        "eval_samples": 717,
+        "eval_samples_per_second": 16.464,
+        "eval_steps_per_second": 16.464,
+        "perplexity": 11.935902065629843
+      },
+      "test": {
+        "split": "shibing624/medical pretrain/test_encyclopedia.json",
+        "documents": 500,
+        "blocks": 733,
+        "block_size": 256,
+        "input_tokens": 187648,
+        "predicted_tokens": 186915,
+        "batch_size": 2,
+        "eval_loss": 2.50169592307014,
+        "perplexity": 12.203172062542132,
+        "model": "/root/autodl-tmp/models/Qwen2.5-7B",
+        "adapter": null,
+        "test_file_sha256": "b35f6bd9fa45fad69e91ed261e242f4b5cc4e922374ea115f1cd71e4fb958ad4",
+        "packed_test_sha256": "2284f03e5154824ff51cd712e5c022cff534add1b6b7d5d6dcd903d3137f85a5",
+        "runtime_seconds": 21.84253771789372,
+        "method": "causal next-token cross-entropy; MedicalGPT-compatible EOS packing in 256-token blocks"
+      },
+      "ceval_correct": 76,
+      "ceval_total": 90
+    },
+    {
+      "branch": "CPT",
+      "validation": {
+        "epoch": 1.0,
+        "eval_accuracy": 0.49550140837367024,
+        "eval_loss": 2.359981060028076,
+        "eval_runtime": 38.7562,
+        "eval_samples": 717,
+        "eval_samples_per_second": 18.5,
+        "eval_steps_per_second": 18.5,
+        "perplexity": 10.59075086201022
+      },
+      "test": {
+        "split": "shibing624/medical pretrain/test_encyclopedia.json",
+        "documents": 500,
+        "blocks": 733,
+        "block_size": 256,
+        "input_tokens": 187648,
+        "predicted_tokens": 186915,
+        "batch_size": 2,
+        "eval_loss": 2.3878718759320767,
+        "perplexity": 10.890293369522212,
+        "model": "/root/autodl-tmp/models/Qwen2.5-7B",
+        "adapter": "/root/autodl-tmp/medical-gpt-outputs/pt-full20k-7b-v2",
+        "test_file_sha256": "b35f6bd9fa45fad69e91ed261e242f4b5cc4e922374ea115f1cd71e4fb958ad4",
+        "packed_test_sha256": "2284f03e5154824ff51cd712e5c022cff534add1b6b7d5d6dcd903d3137f85a5",
+        "runtime_seconds": 28.241650297306478,
+        "method": "causal next-token cross-entropy; MedicalGPT-compatible EOS packing in 256-token blocks"
+      },
+      "ceval_correct": 77,
+      "ceval_total": 90
+    },
+    {
+      "branch": "Base -> SFT",
+      "validation": {
+        "epoch": 1.0,
+        "eval_loss": 2.0851404666900635,
+        "eval_runtime": 31.7171,
+        "eval_samples": 500,
+        "eval_samples_per_second": 15.764,
+        "eval_steps_per_second": 15.764,
+        "perplexity": 8.045721558203232
+      },
+      "test": {
+        "epoch": 0,
+        "eval_loss": 2.1155354976654053,
+        "eval_model_preparation_time": 0.0267,
+        "eval_runtime": 31.3315,
+        "eval_samples": 500,
+        "eval_samples_per_second": 15.958,
+        "eval_steps_per_second": 15.958,
+        "perplexity": 8.294026008707823
+      },
+      "ceval_correct": 75,
+      "ceval_total": 90
+    },
+    {
+      "branch": "CPT -> SFT",
+      "validation": {
+        "epoch": 1.0,
+        "eval_loss": 2.092318058013916,
+        "eval_runtime": 32.4699,
+        "eval_samples": 500,
+        "eval_samples_per_second": 15.399,
+        "eval_steps_per_second": 15.399,
+        "perplexity": 8.1036782052004
+      },
+      "test": {
+        "epoch": 0,
+        "eval_loss": 2.1252217292785645,
+        "eval_model_preparation_time": 0.0269,
+        "eval_runtime": 33.4323,
+        "eval_samples": 500,
+        "eval_samples_per_second": 14.956,
+        "eval_steps_per_second": 14.956,
+        "perplexity": 8.374754210484049
+      },
+      "ceval_correct": 78,
+      "ceval_total": 90
+    }
+  ],
+  "paired_tests": {
+    "CPT_vs_Base": {
+      "left_only_correct": 2,
+      "right_only_correct": 3,
+      "exact_p": 1.0
+    },
+    "CPT_SFT_vs_Base_SFT": {
+      "left_only_correct": 1,
+      "right_only_correct": 4,
+      "exact_p": 0.375
+    }
+  },
+  "training_minutes": {
+    "CPT": 146.56016499999998,
+    "Base -> SFT": 109.38610333333332,
+    "CPT -> SFT": 113.30532833333334
+  },
+  "data_identity_verified": true
+}

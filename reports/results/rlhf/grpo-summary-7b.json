@@ -1,0 +1,14 @@
+{
+  "method": "GRPO",
+  "model": "Qwen2.5-7B SFT merged base",
+  "train_steps": 250,
+  "num_generations": 4,
+  "max_completion_length": 128,
+  "test_samples": 500,
+  "sft_reward_mean": 0.1596237793,
+  "grpo_reward_mean": 0.0800059814,
+  "reward_delta": -0.0796177979,
+  "sft_ceval": "74/90",
+  "grpo_ceval": "74/90",
+  "conclusion": "pipeline completed; current configuration did not improve over SFT"
+}

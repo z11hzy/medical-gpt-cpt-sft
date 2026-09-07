@@ -1,0 +1,7 @@
+{
+  "train_samples": 20000,
+  "validation_samples": 500,
+  "train_tokenized_sha256": "c6eefe407845196ea086a2094884e1df2dfe26fa48f1ddb3b55e1c7b5295c1f1",
+  "valid_tokenized_sha256": "8dd4af9cbc776eb6c50b43ec3f583f22f3dd5705925c52926e25f49232e261a1",
+  "matches_base_branch": true
+}

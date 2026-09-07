@@ -1,0 +1,10 @@
+{
+  "method": "DPO",
+  "model": "Qwen2.5-7B Base -> SFT",
+  "train_pairs": 5555,
+  "eval_pairs": 500,
+  "train_loss": 0.5957,
+  "eval_loss": 0.5637,
+  "preference_accuracy": 0.742,
+  "reward_margin": 0.4235
+}

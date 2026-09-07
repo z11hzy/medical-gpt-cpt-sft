@@ -1,0 +1,16 @@
+{
+  "eval_loss": 2.479550838470459,
+  "eval_model_preparation_time": 0.0273,
+  "eval_accuracy": 0.48007219624251374,
+  "eval_runtime": 43.549,
+  "eval_samples_per_second": 16.464,
+  "eval_steps_per_second": 16.464,
+  "epoch": 0,
+  "phase": "base",
+  "status": "complete",
+  "step": 0,
+  "max_steps": 0,
+  "elapsed_seconds": 87.4,
+  "updated_at": "2026-09-06T02:30:22",
+  "perplexity": 11.935902065629843
+}

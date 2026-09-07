@@ -1,0 +1,9 @@
+{
+  "method": "PPO",
+  "model": "Qwen2.5-0.5B SFT",
+  "purpose": "engineering validation",
+  "episodes": 1000,
+  "policy": "SFT policy with LoRA",
+  "components": ["policy", "reference", "reward model", "value model", "KL penalty"],
+  "note": "This is a proof-of-pipeline result, not the main 7B quality claim."
+}

@@ -1,0 +1,1124 @@
+{
+  "benchmark": "ceval/ceval-exam public validation split",
+  "subjects": {
+    "basic_medicine": {
+      "correct": 16,
+      "total": 19,
+      "accuracy": 0.8421052631578947
+    },
+    "clinical_medicine": {
+      "correct": 17,
+      "total": 22,
+      "accuracy": 0.7727272727272727
+    },
+    "physician": {
+      "correct": 42,
+      "total": 49,
+      "accuracy": 0.8571428571428571
+    }
+  },
+  "micro_accuracy": 0.8333333333333334,
+  "macro_accuracy": 0.8239917976760082,
+  "correct": 75,
+  "total": 90,
+  "model": "/root/autodl-tmp/models/Qwen2.5-7B",
+  "adapter": "/root/autodl-tmp/medical-gpt-outputs/sft-base-20k-7b-v2",
+  "scoring": "fixed zero-shot prompt; conditional log-likelihood of A/B/C/D",
+  "choice_token_ids": {
+    "A": [
+      32
+    ],
+    "B": [
+      33
+    ],
+    "C": [
+      34
+    ],
+    "D": [
+      35
+    ]
+  },
+  "runtime_seconds": 5.882566278334707,
+  "predictions": [
+    {
+      "subject": "basic_medicine",
+      "id": 0,
+      "gold": "D",
+      "prediction": "D",
+      "choice_log_likelihood": {
+        "A": -5.696497440338135,
+        "B": -6.071497440338135,
+        "C": -5.571497440338135,
+        "D": -0.19649764895439148
+      }
+    },
+    {
+      "subject": "basic_medicine",
+      "id": 1,
+      "gold": "C",
+      "prediction": "C",
+      "choice_log_likelihood": {
+        "A": -5.428700923919678,
+        "B": -5.303700923919678,
+        "C": -0.3037009835243225,
+        "D": -4.178700923919678
+      }
+    },
+    {
+      "subject": "basic_medicine",
+      "id": 2,
+      "gold": "D",
+      "prediction": "D",
+      "choice_log_likelihood": {
+        "A": -6.938953399658203,
+        "B": -7.438953399658203,
+        "C": -5.563953399658203,
+        "D": -0.6889533400535583
+      }
+    },
+    {
+      "subject": "basic_medicine",
+      "id": 3,
+      "gold": "B",
+      "prediction": "D",
+      "choice_log_likelihood": {
+        "A": -3.046480894088745,
+        "B": -1.5464808940887451,
+        "C": -3.046480894088745,
+        "D": -1.1714808940887451
+      }
+    },
+    {
+      "subject": "basic_medicine",
+      "id": 4,
+      "gold": "D",
+      "prediction": "D",
+      "choice_log_likelihood": {
+        "A": -4.765880107879639,
+        "B": -4.640880107879639,
+        "C": -4.390880107879639,
+        "D": -0.14088000357151031
+      }
+    },
+    {
+      "subject": "basic_medicine",
+      "id": 5,
+      "gold": "C",
+      "prediction": "C",
+      "choice_log_likelihood": {
+        "A": -5.770518779754639,
+        "B": -4.895518779754639,
+        "C": -0.3955187499523163,
+        "D": -5.520518779754639
+      }
+    },
+    {
+      "subject": "basic_medicine",
+      "id": 6,
+      "gold": "B",
+      "prediction": "B",
+      "choice_log_likelihood": {
+        "A": -4.451498985290527,
+        "B": -0.326498806476593,
+        "C": -4.951498985290527,
+        "D": -5.076498985290527
+      }
+    },
+    {
+      "subject": "basic_medicine",
+      "id": 7,
+      "gold": "D",
+      "prediction": "D",
+      "choice_log_likelihood": {
+        "A": -4.260347843170166,
+        "B": -6.135347843170166,
+        "C": -5.635347843170166,
+        "D": -0.2603476643562317
+      }
+    },
+    {
+      "subject": "basic_medicine",
+      "id": 8,
+      "gold": "B",
+      "prediction": "B",
+      "choice_log_likelihood": {
+        "A": -3.677645444869995,
+        "B": -0.6776454448699951,
+        "C": -3.427645444869995,
+        "D": -4.927645683288574
+      }
+    },
+    {
+      "subject": "basic_medicine",
+      "id": 9,
+      "gold": "C",
+      "prediction": "C",
+      "choice_log_likelihood": {
+        "A": -6.14977502822876,
+        "B": -6.14977502822876,
+        "C": -0.2747749090194702,
+        "D": -5.89977502822876
+      }
+    },
+    {
+      "subject": "basic_medicine",
+      "id": 10,
+      "gold": "A",
+      "prediction": "C",
+      "choice_log_likelihood": {
+        "A": -2.3531334400177,
+        "B": -3.7281334400177,
+        "C": -0.7281333804130554,
+        "D": -2.9781334400177
+      }
+    },
+    {
+      "subject": "basic_medicine",
+      "id": 11,
+      "gold": "C",
+      "prediction": "B",
+      "choice_log_likelihood": {
+        "A": -5.073551177978516,
+        "B": -0.9485509991645813,
+        "C": -1.8235509395599365,
+        "D": -4.698551177978516
+      }
+    },
+    {
+      "subject": "basic_medicine",
+      "id": 12,
+      "gold": "B",
+      "prediction": "B",
+      "choice_log_likelihood": {
+        "A": -5.180568695068359,
+        "B": -0.430568665266037,
+        "C": -3.1805686950683594,
+        "D": -5.055568695068359
+      }
+    },
+    {
+      "subject": "basic_medicine",
+      "id": 13,
+      "gold": "D",
+      "prediction": "D",
+      "choice_log_likelihood": {
+        "A": -4.199978351593018,
+        "B": -5.824978351593018,
+        "C": -4.949978351593018,
+        "D": -0.4499783217906952
+      }
+    },
+    {
+      "subject": "basic_medicine",
+      "id": 14,
+      "gold": "D",
+      "prediction": "D",
+      "choice_log_likelihood": {
+        "A": -5.459918975830078,
+        "B": -6.584918975830078,
+        "C": -5.834918975830078,
+        "D": -0.5849190950393677
+      }
+    },
+    {
+      "subject": "basic_medicine",
+      "id": 15,
+      "gold": "D",
+      "prediction": "D",
+      "choice_log_likelihood": {
+        "A": -5.431502819061279,
+        "B": -5.931502819061279,
+        "C": -4.181502819061279,
+        "D": -0.18150289356708527
+      }
+    },
+    {
+      "subject": "basic_medicine",
+      "id": 16,
+      "gold": "D",
+      "prediction": "D",
+      "choice_log_likelihood": {
+        "A": -5.53045129776001,
+        "B": -5.53045129776001,
+        "C": -3.5304510593414307,
+        "D": -0.40545111894607544
+      }
+    },
+    {
+      "subject": "basic_medicine",
+      "id": 17,
+      "gold": "B",
+      "prediction": "B",
+      "choice_log_likelihood": {
+        "A": -4.535050392150879,
+        "B": -0.6600503921508789,
+        "C": -4.910050392150879,
+        "D": -3.160050392150879
+      }
+    },
+    {
+      "subject": "basic_medicine",
+      "id": 18,
+      "gold": "B",
+      "prediction": "B",
+      "choice_log_likelihood": {
+        "A": -2.394044876098633,
+        "B": -0.7690449953079224,
+        "C": -3.644044876098633,
+        "D": -3.394044876098633
+      }
+    },
+    {
+      "subject": "clinical_medicine",
+      "id": 0,
+      "gold": "B",
+      "prediction": "A",
+      "choice_log_likelihood": {
+        "A": -0.9886820912361145,
+        "B": -0.9886820912361145,
+        "C": -3.2386820316314697,
+        "D": -3.1136820316314697
+      }
+    },
+    {
+      "subject": "clinical_medicine",
+      "id": 1,
+      "gold": "D",
+      "prediction": "C",
+      "choice_log_likelihood": {
+        "A": -3.523322582244873,
+        "B": -3.148322582244873,
+        "C": -0.7733225226402283,
+        "D": -1.398322582244873
+      }
+    },
+    {
+      "subject": "clinical_medicine",
+      "id": 2,
+      "gold": "C",
+      "prediction": "C",
+      "choice_log_likelihood": {
+        "A": -4.772360324859619,
+        "B": -5.022360324859619,
+        "C": -0.5223603248596191,
+        "D": -5.022360324859619
+      }
+    },
+    {
+      "subject": "clinical_medicine",
+      "id": 3,
+      "gold": "D",
+      "prediction": "D",
+      "choice_log_likelihood": {
+        "A": -3.886045217514038,
+        "B": -3.386045217514038,
+        "C": -4.386044979095459,
+        "D": -0.3860451579093933
+      }
+    },
+    {
+      "subject": "clinical_medicine",
+      "id": 4,
+      "gold": "A",
+      "prediction": "A",
+      "choice_log_likelihood": {
+        "A": -0.6209045052528381,
+        "B": -5.370904445648193,
+        "C": -4.245904445648193,
+        "D": -3.8709044456481934
+      }
+    },
+    {
+      "subject": "clinical_medicine",
+      "id": 5,
+      "gold": "B",
+      "prediction": "C",
+      "choice_log_likelihood": {
+        "A": -3.6761794090270996,
+        "B": -1.1761794090270996,
+        "C": -0.9261794090270996,
+        "D": -2.4261794090270996
+      }
+    },
+    {
+      "subject": "clinical_medicine",
+      "id": 6,
+      "gold": "B",
+      "prediction": "B",
+      "choice_log_likelihood": {
+        "A": -4.300776958465576,
+        "B": -0.3007768988609314,
+        "C": -3.925776958465576,
+        "D": -3.925776958465576
+      }
+    },
+    {
+      "subject": "clinical_medicine",
+      "id": 7,
+      "gold": "D",
+      "prediction": "D",
+      "choice_log_likelihood": {
+        "A": -2.4753928184509277,
+        "B": -3.7253928184509277,
+        "C": -4.100392818450928,
+        "D": -0.3503926992416382
+      }
+    },
+    {
+      "subject": "clinical_medicine",
+      "id": 8,
+      "gold": "B",
+      "prediction": "B",
+      "choice_log_likelihood": {
+        "A": -4.363703727722168,
+        "B": -0.36370378732681274,
+        "C": -3.988703727722168,
+        "D": -4.363703727722168
+      }
+    },
+    {
+      "subject": "clinical_medicine",
+      "id": 9,
+      "gold": "C",
+      "prediction": "C",
+      "choice_log_likelihood": {
+        "A": -2.360224723815918,
+        "B": -4.735224723815918,
+        "C": -0.860224723815918,
+        "D": -4.485224723815918
+      }
+    },
+    {
+      "subject": "clinical_medicine",
+      "id": 10,
+      "gold": "A",
+      "prediction": "A",
+      "choice_log_likelihood": {
+        "A": -0.3390538692474365,
+        "B": -4.339054107666016,
+        "C": -4.464054107666016,
+        "D": -3.7140538692474365
+      }
+    },
+    {
+      "subject": "clinical_medicine",
+      "id": 11,
+      "gold": "C",
+      "prediction": "D",
+      "choice_log_likelihood": {
+        "A": -2.425410747528076,
+        "B": -2.550410747528076,
+        "C": -1.9254107475280762,
+        "D": -1.0504107475280762
+      }
+    },
+    {
+      "subject": "clinical_medicine",
+      "id": 12,
+      "gold": "A",
+      "prediction": "C",
+      "choice_log_likelihood": {
+        "A": -2.2109267711639404,
+        "B": -2.2109267711639404,
+        "C": -1.4609267711639404,
+        "D": -1.5859267711639404
+      }
+    },
+    {
+      "subject": "clinical_medicine",
+      "id": 13,
+      "gold": "D",
+      "prediction": "D",
+      "choice_log_likelihood": {
+        "A": -3.8570449352264404,
+        "B": -4.3570451736450195,
+        "C": -3.6070449352264404,
+        "D": -0.4820449948310852
+      }
+    },
+    {
+      "subject": "clinical_medicine",
+      "id": 14,
+      "gold": "C",
+      "prediction": "C",
+      "choice_log_likelihood": {
+        "A": -4.20973014831543,
+        "B": -4.45973014831543,
+        "C": -0.45973026752471924,
+        "D": -4.45973014831543
+      }
+    },
+    {
+      "subject": "clinical_medicine",
+      "id": 15,
+      "gold": "C",
+      "prediction": "C",
+      "choice_log_likelihood": {
+        "A": -2.3979063034057617,
+        "B": -1.1479063034057617,
+        "C": -0.8979063630104065,
+        "D": -4.522906303405762
+      }
+    },
+    {
+      "subject": "clinical_medicine",
+      "id": 16,
+      "gold": "B",
+      "prediction": "B",
+      "choice_log_likelihood": {
+        "A": -4.469204425811768,
+        "B": -0.4692046046257019,
+        "C": -3.7192046642303467,
+        "D": -4.594204425811768
+      }
+    },
+    {
+      "subject": "clinical_medicine",
+      "id": 17,
+      "gold": "D",
+      "prediction": "D",
+      "choice_log_likelihood": {
+        "A": -4.24751091003418,
+        "B": -4.62251091003418,
+        "C": -2.9975109100341797,
+        "D": -0.49751079082489014
+      }
+    },
+    {
+      "subject": "clinical_medicine",
+      "id": 18,
+      "gold": "A",
+      "prediction": "A",
+      "choice_log_likelihood": {
+        "A": -0.49665117263793945,
+        "B": -3.3716511726379395,
+        "C": -2.1216511726379395,
+        "D": -3.7466511726379395
+      }
+    },
+    {
+      "subject": "clinical_medicine",
+      "id": 19,
+      "gold": "A",
+      "prediction": "A",
+      "choice_log_likelihood": {
+        "A": -0.4006699323654175,
+        "B": -5.775670051574707,
+        "C": -5.775670051574707,
+        "D": -5.150670051574707
+      }
+    },
+    {
+      "subject": "clinical_medicine",
+      "id": 20,
+      "gold": "C",
+      "prediction": "C",
+      "choice_log_likelihood": {
+        "A": -4.8503828048706055,
+        "B": -5.7253828048706055,
+        "C": -0.47538256645202637,
+        "D": -5.1003828048706055
+      }
+    },
+    {
+      "subject": "clinical_medicine",
+      "id": 21,
+      "gold": "D",
+      "prediction": "D",
+      "choice_log_likelihood": {
+        "A": -5.184669494628906,
+        "B": -5.559669494628906,
+        "C": -4.434669494628906,
+        "D": -0.5596692562103271
+      }
+    },
+    {
+      "subject": "physician",
+      "id": 0,
+      "gold": "A",
+      "prediction": "A",
+      "choice_log_likelihood": {
+        "A": -0.6407166719436646,
+        "B": -2.015716552734375,
+        "C": -3.140716552734375,
+        "D": -2.765716552734375
+      }
+    },
+    {
+      "subject": "physician",
+      "id": 1,
+      "gold": "C",
+      "prediction": "C",
+      "choice_log_likelihood": {
+        "A": -5.812141418457031,
+        "B": -5.937141418457031,
+        "C": -0.3121415078639984,
+        "D": -5.312141418457031
+      }
+    },
+    {
+      "subject": "physician",
+      "id": 2,
+      "gold": "D",
+      "prediction": "B",
+      "choice_log_likelihood": {
+        "A": -2.6078286170959473,
+        "B": -1.1078284978866577,
+        "C": -1.8578284978866577,
+        "D": -1.2328284978866577
+      }
+    },
+    {
+      "subject": "physician",
+      "id": 3,
+      "gold": "A",
+      "prediction": "A",
+      "choice_log_likelihood": {
+        "A": -0.512499988079071,
+        "B": -3.262500047683716,
+        "C": -4.512499809265137,
+        "D": -2.387500047683716
+      }
+    },
+    {
+      "subject": "physician",
+      "id": 4,
+      "gold": "A",
+      "prediction": "A",
+      "choice_log_likelihood": {
+        "A": -0.42270681262016296,
+        "B": -2.7977068424224854,
+        "C": -4.922706604003906,
+        "D": -5.172706604003906
+      }
+    },
+    {
+      "subject": "physician",
+      "id": 5,
+      "gold": "A",
+      "prediction": "A",
+      "choice_log_likelihood": {
+        "A": -0.29066893458366394,
+        "B": -4.040668964385986,
+        "C": -4.040668964385986,
+        "D": -4.415668964385986
+      }
+    },
+    {
+      "subject": "physician",
+      "id": 6,
+      "gold": "A",
+      "prediction": "A",
+      "choice_log_likelihood": {
+        "A": -0.3653362989425659,
+        "B": -4.3653364181518555,
+        "C": -3.9903364181518555,
+        "D": -3.8653364181518555
+      }
+    },
+    {
+      "subject": "physician",
+      "id": 7,
+      "gold": "D",
+      "prediction": "D",
+      "choice_log_likelihood": {
+        "A": -6.207390785217285,
+        "B": -6.082390785217285,
+        "C": -4.957390785217285,
+        "D": -0.33239078521728516
+      }
+    },
+    {
+      "subject": "physician",
+      "id": 8,
+      "gold": "D",
+      "prediction": "C",
+      "choice_log_likelihood": {
+        "A": -1.7876832485198975,
+        "B": -2.5376832485198975,
+        "C": -1.1626832485198975,
+        "D": -1.2876832485198975
+      }
+    },
+    {
+      "subject": "physician",
+      "id": 9,
+      "gold": "C",
+      "prediction": "C",
+      "choice_log_likelihood": {
+        "A": -1.2407922744750977,
+        "B": -3.4907922744750977,
+        "C": -0.7407923340797424,
+        "D": -3.7407922744750977
+      }
+    },
+    {
+      "subject": "physician",
+      "id": 10,
+      "gold": "B",
+      "prediction": "B",
+      "choice_log_likelihood": {
+        "A": -2.92518949508667,
+        "B": -0.9251894354820251,
+        "C": -2.42518949508667,
+        "D": -1.92518949508667
+      }
+    },
+    {
+      "subject": "physician",
+      "id": 11,
+      "gold": "D",
+      "prediction": "D",
+      "choice_log_likelihood": {
+        "A": -5.108912944793701,
+        "B": -4.858912944793701,
+        "C": -1.4839129447937012,
+        "D": -0.6089128851890564
+      }
+    },
+    {
+      "subject": "physician",
+      "id": 12,
+      "gold": "A",
+      "prediction": "B",
+      "choice_log_likelihood": {
+        "A": -2.5944342613220215,
+        "B": -1.344434380531311,
+        "C": -2.2194342613220215,
+        "D": -2.5944342613220215
+      }
+    },
+    {
+      "subject": "physician",
+      "id": 13,
+      "gold": "C",
+      "prediction": "C",
+      "choice_log_likelihood": {
+        "A": -4.686479091644287,
+        "B": -3.561478853225708,
+        "C": -0.5614789128303528,
+        "D": -2.686478853225708
+      }
+    },
+    {
+      "subject": "physician",
+      "id": 14,
+      "gold": "C",
+      "prediction": "C",
+      "choice_log_likelihood": {
+        "A": -5.693301677703857,
+        "B": -6.443301677703857,
+        "C": -0.31830182671546936,
+        "D": -5.443301677703857
+      }
+    },
+    {
+      "subject": "physician",
+      "id": 15,
+      "gold": "D",
+      "prediction": "B",
+      "choice_log_likelihood": {
+        "A": -4.377264022827148,
+        "B": -0.502264142036438,
+        "C": -2.8772640228271484,
+        "D": -3.1272640228271484
+      }
+    },
+    {
+      "subject": "physician",
+      "id": 16,
+      "gold": "C",
+      "prediction": "C",
+      "choice_log_likelihood": {
+        "A": -4.9401092529296875,
+        "B": -5.1901092529296875,
+        "C": -0.19010943174362183,
+        "D": -5.3151092529296875
+      }
+    },
+    {
+      "subject": "physician",
+      "id": 17,
+      "gold": "A",
+      "prediction": "A",
+      "choice_log_likelihood": {
+        "A": -0.6894282102584839,
+        "B": -5.689428329467773,
+        "C": -4.939428329467773,
+        "D": -1.4394282102584839
+      }
+    },
+    {
+      "subject": "physician",
+      "id": 18,
+      "gold": "D",
+      "prediction": "D",
+      "choice_log_likelihood": {
+        "A": -4.096316337585449,
+        "B": -3.34631609916687,
+        "C": -2.47131609916687,
+        "D": -0.3463161885738373
+      }
+    },
+    {
+      "subject": "physician",
+      "id": 19,
+      "gold": "D",
+      "prediction": "D",
+      "choice_log_likelihood": {
+        "A": -5.155216217041016,
+        "B": -5.530216217041016,
+        "C": -5.530216217041016,
+        "D": -0.2802164554595947
+      }
+    },
+    {
+      "subject": "physician",
+      "id": 20,
+      "gold": "B",
+      "prediction": "B",
+      "choice_log_likelihood": {
+        "A": -4.55670166015625,
+        "B": -0.4317014217376709,
+        "C": -4.30670166015625,
+        "D": -4.43170166015625
+      }
+    },
+    {
+      "subject": "physician",
+      "id": 21,
+      "gold": "B",
+      "prediction": "B",
+      "choice_log_likelihood": {
+        "A": -4.637399196624756,
+        "B": -0.13739900290966034,
+        "C": -4.387399196624756,
+        "D": -5.137399196624756
+      }
+    },
+    {
+      "subject": "physician",
+      "id": 22,
+      "gold": "A",
+      "prediction": "C",
+      "choice_log_likelihood": {
+        "A": -2.8070437908172607,
+        "B": -5.05704402923584,
+        "C": -0.3070438802242279,
+        "D": -4.80704402923584
+      }
+    },
+    {
+      "subject": "physician",
+      "id": 23,
+      "gold": "C",
+      "prediction": "C",
+      "choice_log_likelihood": {
+        "A": -5.685052394866943,
+        "B": -6.060052394866943,
+        "C": -0.18505223095417023,
+        "D": -5.060052394866943
+      }
+    },
+    {
+      "subject": "physician",
+      "id": 24,
+      "gold": "D",
+      "prediction": "D",
+      "choice_log_likelihood": {
+        "A": -4.500758171081543,
+        "B": -4.750758171081543,
+        "C": -4.375758171081543,
+        "D": -0.25075840950012207
+      }
+    },
+    {
+      "subject": "physician",
+      "id": 25,
+      "gold": "C",
+      "prediction": "C",
+      "choice_log_likelihood": {
+        "A": -5.579699516296387,
+        "B": -6.704699516296387,
+        "C": -0.3296992778778076,
+        "D": -5.829699516296387
+      }
+    },
+    {
+      "subject": "physician",
+      "id": 26,
+      "gold": "A",
+      "prediction": "A",
+      "choice_log_likelihood": {
+        "A": -0.8858347535133362,
+        "B": -4.260834693908691,
+        "C": -3.0108346939086914,
+        "D": -1.3858346939086914
+      }
+    },
+    {
+      "subject": "physician",
+      "id": 27,
+      "gold": "B",
+      "prediction": "B",
+      "choice_log_likelihood": {
+        "A": -5.845335483551025,
+        "B": -0.34533530473709106,
+        "C": -4.595335483551025,
+        "D": -5.470335483551025
+      }
+    },
+    {
+      "subject": "physician",
+      "id": 28,
+      "gold": "D",
+      "prediction": "C",
+      "choice_log_likelihood": {
+        "A": -5.0789079666137695,
+        "B": -5.4539079666137695,
+        "C": -0.32890787720680237,
+        "D": -3.7039079666137695
+      }
+    },
+    {
+      "subject": "physician",
+      "id": 29,
+      "gold": "C",
+      "prediction": "C",
+      "choice_log_likelihood": {
+        "A": -3.6581521034240723,
+        "B": -4.408152103424072,
+        "C": -0.6581521034240723,
+        "D": -2.2831521034240723
+      }
+    },
+    {
+      "subject": "physician",
+      "id": 30,
+      "gold": "C",
+      "prediction": "C",
+      "choice_log_likelihood": {
+        "A": -5.611684799194336,
+        "B": -6.611684799194336,
+        "C": -0.11168459057807922,
+        "D": -4.861684799194336
+      }
+    },
+    {
+      "subject": "physician",
+      "id": 31,
+      "gold": "B",
+      "prediction": "B",
+      "choice_log_likelihood": {
+        "A": -5.480195999145508,
+        "B": -0.10519607365131378,
+        "C": -5.980195999145508,
+        "D": -5.730195999145508
+      }
+    },
+    {
+      "subject": "physician",
+      "id": 32,
+      "gold": "A",
+      "prediction": "A",
+      "choice_log_likelihood": {
+        "A": -0.39436230063438416,
+        "B": -6.644362449645996,
+        "C": -5.644362449645996,
+        "D": -5.269362449645996
+      }
+    },
+    {
+      "subject": "physician",
+      "id": 33,
+      "gold": "D",
+      "prediction": "D",
+      "choice_log_likelihood": {
+        "A": -5.618994235992432,
+        "B": -5.118994235992432,
+        "C": -3.8689944744110107,
+        "D": -0.36899441480636597
+      }
+    },
+    {
+      "subject": "physician",
+      "id": 34,
+      "gold": "B",
+      "prediction": "B",
+      "choice_log_likelihood": {
+        "A": -5.0014166831970215,
+        "B": -0.2514165937900543,
+        "C": -4.3764166831970215,
+        "D": -4.6264166831970215
+      }
+    },
+    {
+      "subject": "physician",
+      "id": 35,
+      "gold": "D",
+      "prediction": "D",
+      "choice_log_likelihood": {
+        "A": -6.703857898712158,
+        "B": -6.703857898712158,
+        "C": -5.453857898712158,
+        "D": -0.32885774970054626
+      }
+    },
+    {
+      "subject": "physician",
+      "id": 36,
+      "gold": "B",
+      "prediction": "B",
+      "choice_log_likelihood": {
+        "A": -4.933252334594727,
+        "B": -0.8082524538040161,
+        "C": -5.183252334594727,
+        "D": -1.8082524538040161
+      }
+    },
+    {
+      "subject": "physician",
+      "id": 37,
+      "gold": "A",
+      "prediction": "A",
+      "choice_log_likelihood": {
+        "A": -0.24080127477645874,
+        "B": -3.6158013343811035,
+        "C": -4.7408013343811035,
+        "D": -4.9908013343811035
+      }
+    },
+    {
+      "subject": "physician",
+      "id": 38,
+      "gold": "C",
+      "prediction": "C",
+      "choice_log_likelihood": {
+        "A": -5.553066253662109,
+        "B": -4.928066253662109,
+        "C": -0.8030664324760437,
+        "D": -1.9280664920806885
+      }
+    },
+    {
+      "subject": "physician",
+      "id": 39,
+      "gold": "B",
+      "prediction": "B",
+      "choice_log_likelihood": {
+        "A": -5.348398685455322,
+        "B": -0.4733988344669342,
+        "C": -4.848398685455322,
+        "D": -5.973398685455322
+      }
+    },
+    {
+      "subject": "physician",
+      "id": 40,
+      "gold": "B",
+      "prediction": "B",
+      "choice_log_likelihood": {
+        "A": -5.7851457595825195,
+        "B": -0.28514572978019714,
+        "C": -5.5351457595825195,
+        "D": -6.0351457595825195
+      }
+    },
+    {
+      "subject": "physician",
+      "id": 41,
+      "gold": "C",
+      "prediction": "C",
+      "choice_log_likelihood": {
+        "A": -5.166384220123291,
+        "B": -5.541384220123291,
+        "C": -0.1663842499256134,
+        "D": -5.666384220123291
+      }
+    },
+    {
+      "subject": "physician",
+      "id": 42,
+      "gold": "D",
+      "prediction": "D",
+      "choice_log_likelihood": {
+        "A": -5.337456226348877,
+        "B": -5.212456226348877,
+        "C": -4.837456226348877,
+        "D": -0.3374563157558441
+      }
+    },
+    {
+      "subject": "physician",
+      "id": 43,
+      "gold": "A",
+      "prediction": "A",
+      "choice_log_likelihood": {
+        "A": -0.6496216058731079,
+        "B": -1.774621605873108,
+        "C": -3.6496214866638184,
+        "D": -3.7746214866638184
+      }
+    },
+    {
+      "subject": "physician",
+      "id": 44,
+      "gold": "B",
+      "prediction": "C",
+      "choice_log_likelihood": {
+        "A": -1.6537100076675415,
+        "B": -1.4037100076675415,
+        "C": -1.1537100076675415,
+        "D": -2.153709888458252
+      }
+    },
+    {
+      "subject": "physician",
+      "id": 45,
+      "gold": "B",
+      "prediction": "B",
+      "choice_log_likelihood": {
+        "A": -5.241399765014648,
+        "B": -0.24139954149723053,
+        "C": -5.491399765014648,
+        "D": -6.116399765014648
+      }
+    },
+    {
+      "subject": "physician",
+      "id": 46,
+      "gold": "A",
+      "prediction": "A",
+      "choice_log_likelihood": {
+        "A": -0.48034870624542236,
+        "B": -3.730348587036133,
+        "C": -5.355348587036133,
+        "D": -4.605348587036133
+      }
+    },
+    {
+      "subject": "physician",
+      "id": 47,
+      "gold": "D",
+      "prediction": "D",
+      "choice_log_likelihood": {
+        "A": -1.2850812673568726,
+        "B": -3.410081386566162,
+        "C": -2.910081386566162,
+        "D": -1.1600812673568726
+      }
+    },
+    {
+      "subject": "physician",
+      "id": 48,
+      "gold": "D",
+      "prediction": "D",
+      "choice_log_likelihood": {
+        "A": -2.5948104858398438,
+        "B": -4.094810485839844,
+        "C": -2.3448104858398438,
+        "D": -0.7198105454444885
+      }
+    }
+  ]
+}

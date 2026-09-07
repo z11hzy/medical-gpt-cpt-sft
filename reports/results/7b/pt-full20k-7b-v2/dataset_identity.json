@@ -1,0 +1,7 @@
+{
+  "eval_blocks": 717,
+  "eval_sha256": "6deac703cb414714d3069eeb7bbf5a2a31213e90f94ee747e0217d3c8437fbc2",
+  "train_blocks": 28946,
+  "train_sha256": "af28cfd24e243df352855d2f749a6a6c064a77851b18f8e8b6d27e8fa2bf73fa",
+  "matches_baseline": true
+}

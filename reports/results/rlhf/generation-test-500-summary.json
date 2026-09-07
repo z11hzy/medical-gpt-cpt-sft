@@ -1,0 +1,17 @@
+{
+  "samples": 500,
+  "decoding": "greedy",
+  "max_new_tokens": 256,
+  "batch_size": 4,
+  "sft_reward_mean": 0.159623779296875,
+  "grpo_reward_mean": 0.0800059814453125,
+  "reward_delta_mean": -0.0796177978515625,
+  "grpo_reward_wins": 127,
+  "ties": 261,
+  "sft_reward_wins": 112,
+  "sft_mean_tokens": 187.496,
+  "grpo_mean_tokens": 188.52,
+  "sft_termination_rate": 0.836,
+  "grpo_termination_rate": 0.83,
+  "important_limitation": "Automatic reward comparison reuses the training reward model and is not an independent medical judge."
+}
